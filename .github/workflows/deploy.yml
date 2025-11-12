@@ -35,6 +35,6 @@ jobs:
           aws s3 cp . s3://project1.csuprem.com/ --recursive
       - name: Invalidate CloudFront cache
         uses: chetan/invalidate-cloudfront-action@v2
-         env:
+        env:
           DISTRIBUTION: EZNZW5735HBIC
           PATHS: "/*"
